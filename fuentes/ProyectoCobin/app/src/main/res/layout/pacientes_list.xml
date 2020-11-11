@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imagen_prod_Lv">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rut_prod_Lv"
+        android:text="aquivaelrut"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp">
+    </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nomb_prod_Lv"
+                android:text="nombre"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/apellido_prod_Lv"
+                android:text="apellido"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp">
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aqui va la fecha"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/fecha_prod_Lv"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp">
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

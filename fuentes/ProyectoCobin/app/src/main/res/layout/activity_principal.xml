@@ -15,5 +15,15 @@
         android:id="@+id/pacientes_lv">
     </ListView>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15dp"
+        android:background="@color/azul"
+        android:id="@+id/agregarBtn"
+        android:src="@drawable/ic_baseline_add_24"
+        >
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 </LinearLayout>

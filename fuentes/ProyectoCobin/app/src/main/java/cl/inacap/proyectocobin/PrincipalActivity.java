@@ -9,20 +9,24 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.List;
 
 import cl.inacap.proyectocobin.adapters.PacientesArrayAdapter;
 import cl.inacap.proyectocobin.dao.PacientesDAO;
 import cl.inacap.proyectocobin.dao.PacientesDAOLista;
+import cl.inacap.proyectocobin.dao.PacientesDAOSQLite;
 import cl.inacap.proyectocobin.dto.Paciente;
 
 public class PrincipalActivity extends AppCompatActivity {
 
+    private FloatingActionButton agregarBtn;
     private Toolbar toolbar;
     private ListView pacientesLv;
     private List<Paciente> pacientes;
     private PacientesArrayAdapter adaptador;
-    private PacientesDAO pacientesDAO = PacientesDAOLista.getInstance();
+    private PacientesDAO pacientesDAO = new PacientesDAOSQLite(this);
 
     @Override
     public boolean onSupportNavigateUp() {
@@ -38,6 +42,17 @@ public class PrincipalActivity extends AppCompatActivity {
         this.setSupportActionBar(this.toolbar);
         this.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         this.getSupportActionBar().setDisplayShowHomeEnabled(true);
+        this.agregarBtn = findViewById(R.id.agregarBtn);
+        this.agregarBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PrincipalActivity.this
+                , RegistroPacienteActivity2.class));
+            }
+        });
+    }
+    protected void onResume(){
+        super.onResume();
         pacientes = pacientesDAO.getAll();
         adaptador = new PacientesArrayAdapter(this,
                 R.layout.pacientes_list, pacientes);

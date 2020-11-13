@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:text="registro de pacientes"
         android:textSize="30sp"
-        android:layout_marginTop="20dp"></TextView>
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"></TextView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +34,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/rutEdit">
         </EditText>
     </LinearLayout>
 
@@ -54,7 +56,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/nombreEdit">
         </EditText>
     </LinearLayout>
 
@@ -75,7 +78,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/apellidoEdit">
         </EditText>
     </LinearLayout>
 
@@ -96,7 +100,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/fechaEdit">
         </EditText>
     </LinearLayout>
 
@@ -118,7 +123,8 @@
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/areaSP">
         </Spinner>
 
     </LinearLayout>
@@ -128,7 +134,9 @@
         android:layout_height="wrap_content"
         android:text="presenta síntomas del cobin?"
         android:textSize="20sp"
-        android:layout_marginTop="15dp"></Switch>
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/sintomasSwitch"></Switch>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -147,7 +155,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/temperaturaEdit">
         </EditText>
 
     </LinearLayout>
@@ -156,7 +165,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="pasiente presenta tos?  "
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tosSwitch">
     </Switch>
 
     <LinearLayout
@@ -176,7 +187,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/presionEdit">
         </EditText>
 
     </LinearLayout>
@@ -186,7 +198,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
-        android:text="registrar">
+        android:text="registrarBtn">
     </Button>
 
 </LinearLayout>

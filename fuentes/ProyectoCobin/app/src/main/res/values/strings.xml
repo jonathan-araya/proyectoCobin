@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ProyectoCobin</string>
+    <string-array name="area_array">
+        <item>Atención a publico</item>
+        <item>Otro</item>
+    </string-array>
 </resources>

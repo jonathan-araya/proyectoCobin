@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class Paciente implements Serializable {
+    private int id;
     private String rut;
     private String nombre;
     private String apellido;
@@ -13,6 +14,14 @@ public class Paciente implements Serializable {
     private double temperatura;
     private boolean tos;
     private int presion;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getRut() {
         return rut;
@@ -85,4 +94,5 @@ public class Paciente implements Serializable {
     public void setPresion(int presion) {
         this.presion = presion;
     }
+
 }
